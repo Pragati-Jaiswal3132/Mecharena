@@ -1,0 +1,72 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #1b1b1b, #4e342e);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.5rem;
+}
+
+/* Contact container */
+.contact-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(165, 42, 42, 0.25);
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Heading */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: yellow;
+}
+
+/* Contact card styling */
+.contact-card {
+  animation: fadeInUp 1.5s ease-out;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Contact details */
+p {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+/* Email link */
+.email a {
+  color: yellow;
+  word-wrap: break-word;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.email a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(30px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
